@@ -38,8 +38,8 @@ export async function GET() {
     { "ticker": "^KS11", "price": 2856.42, "change": 1.85, "momentum_20d": 6.30 },
     { "ticker": "^KQ150", "price": 1045.82, "change": 0.95, "momentum_20d": 2.10 },
     // 한국 ETF - 지수
-    { "ticker": "069500.KS", "price": 34560, "change": 1.95, "momentum_20d": 6.20, "name": "KODEX 200" },
-    { "ticker": "102110.KS", "price": 32890, "change": 1.85, "momentum_20d": 5.90, "name": "TIGER 200" },
+    { "ticker": "069500.KS", "price": 34560, "change": 2.10, "momentum_20d": 6.80, "name": "KODEX 200" },
+    { "ticker": "102110.KS", "price": 32890, "change": 1.95, "momentum_20d": 5.90, "name": "TIGER 200" },
     { "ticker": "229200.KS", "price": 18450, "change": 0.95, "momentum_20d": 2.10, "name": "KODEX KOSDAQ150" },
     // 한국 ETF - 섹터 (반도체)
     { "ticker": "091230.KS", "price": 42500, "change": 3.15, "momentum_20d": 11.20, "name": "TIGER 반도체" },
