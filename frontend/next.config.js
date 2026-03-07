@@ -1,8 +1,10 @@
-import type { NextConfig } from 'next';
-
-const nextConfig: NextConfig = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
+  swcMinify: false,
+  compiler: {
+    removeConsole: false,
+  },
   headers: async () => [
     {
       source: '/api/:path*',
@@ -13,4 +15,4 @@ const nextConfig: NextConfig = {
   ],
 };
 
-export default nextConfig;
+module.exports = nextConfig;

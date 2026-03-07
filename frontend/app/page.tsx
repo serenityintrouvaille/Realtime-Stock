@@ -190,11 +190,11 @@ function RegionalTab({ news }: { news: any[] }) {
   return (
     <div className='grid gap-6'>
       <h2 className='text-2xl font-bold mb-4'>🌍 Regional Analysis</h2>
-      {Object.entries(byRegion).map(([region, articles]) => (
+      {Object.entries(byRegion).map(([region, articles]: [string, any]) => (
         <div key={region} className='bg-gradient-to-r from-slate-900 to-slate-800 border border-slate-700 rounded-lg p-6'>
           <h3 className='text-xl font-bold mb-4'>{region}</h3>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-3'>
-            {articles.slice(0, 6).map((article, idx) => (
+            {(articles as any[]).slice(0, 6).map((article, idx) => (
               <div key={idx} className='bg-slate-800/50 p-3 rounded border border-slate-600'>
                 <p className='text-sm font-semibold'>{article.title.substring(0, 50)}...</p>
                 <div className='flex justify-between mt-2 text-xs opacity-50'>
@@ -274,7 +274,8 @@ function PortfolioTab({ stocks }: { stocks: any[] }) {
   const total = stocks.length;
   const gainers = stocks.filter((s) => s.change > 0).length;
   const losers = stocks.filter((s) => s.change < 0).length;
-  const avgChange = (stocks.reduce((sum, s) => sum + s.change, 0) / stocks.length).toFixed(2);
+  const avgChangeNum = stocks.reduce((sum, s) => sum + s.change, 0) / stocks.length;
+  const avgChange = parseFloat(avgChangeNum.toFixed(2));
 
   return (
     <div className='grid gap-6'>
