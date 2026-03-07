@@ -1,0 +1,28 @@
+export async function GET() {
+  const stocksData = [
+    { "ticker": "AAPL", "price": 185.42, "change": 2.15, "momentum_20d": 5.32 },
+    { "ticker": "MSFT", "price": 378.91, "change": 1.85, "momentum_20d": 4.20 },
+    { "ticker": "GOOGL", "price": 140.23, "change": -1.25, "momentum_20d": -2.15 },
+    { "ticker": "NVDA", "price": 892.45, "change": 3.42, "momentum_20d": 12.50 },
+    { "ticker": "TSLA", "price": 242.56, "change": -2.30, "momentum_20d": -8.90 },
+    { "ticker": "META", "price": 512.34, "change": 2.10, "momentum_20d": 6.75 },
+    { "ticker": "AMZN", "price": 181.67, "change": 1.45, "momentum_20d": 3.20 },
+    { "ticker": "XOM", "price": 105.23, "change": -0.85, "momentum_20d": 1.20 },
+    { "ticker": "CVX", "price": 168.45, "change": -1.20, "momentum_20d": -2.30 },
+    { "ticker": "LMT", "price": 478.92, "change": 2.85, "momentum_20d": 8.40 },
+    { "ticker": "RTX", "price": 92.15, "change": 2.10, "momentum_20d": 7.50 },
+    { "ticker": "JPM", "price": 187.56, "change": 0.95, "momentum_20d": 2.10 },
+    { "ticker": "BAC", "price": 34.78, "change": -0.50, "momentum_20d": -1.20 },
+    { "ticker": "GS", "price": 312.45, "change": 1.20, "momentum_20d": 3.40 },
+    { "ticker": "TSM", "price": 118.92, "change": 3.15, "momentum_20d": 9.20 },
+    { "ticker": "SAP", "price": 95.67, "change": 0.85, "momentum_20d": 1.50 },
+    { "ticker": "BTC-USD", "price": 42560.50, "change": 5.20, "momentum_20d": 15.80 },
+    { "ticker": "ETH-USD", "price": 2285.30, "change": 4.15, "momentum_20d": 12.30 },
+    { "ticker": "GLD", "price": 185.45, "change": 0.75, "momentum_20d": 2.10 },
+    { "ticker": "USO", "price": 78.92, "change": -1.85, "momentum_20d": -3.20 }
+  ];
+
+  return new Response(JSON.stringify(stocksData), {
+    headers: { 'Content-Type': 'application/json' },
+  });
+}
