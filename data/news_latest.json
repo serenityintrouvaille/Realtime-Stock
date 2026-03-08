@@ -1,0 +1,61 @@
+{
+  "timestamp": "2026-03-08T00:00:00",
+  "total_articles": 152,
+  "summary": "오늘의 지정학 상황: 글로벌 금융시장은 지정학적 긴장 완화 신호에 긍정 반응. 미-중 무역 협상 진전 뉴스에 테크섹터 상승세, 석유 시장은 중동 안정화 기대로 약세. 유럽은 에너지 공급 안정성 개선으로 인플레이션 우려 완화. 한국은 반도체 및 방산 수출 호황 지속. 주목할 점은 (1) 인공지능 규제 논의 강화, (2) 녹색에너지 전환 가속화, (3) 신흥국 통화 강세 추세.",
+  "articles": [
+    {
+      "title": "US-China Trade Talks Show Positive Progress in Geneva",
+      "link": "https://reuters.com/example",
+      "summary": "미국과 중국의 무역 협상이 제네바에서 긍정적 진전을 보였습니다. 양국은 첨단기술 분야의 협력 방안에 합의했으며, 향후 3개월 내 추가 협의를 진행하기로 했습니다.",
+      "source": "reuters",
+      "published": "2026-03-08T08:30:00Z",
+      "category": "제재·무역",
+      "confidence": 95
+    },
+    {
+      "title": "Global AI Regulation Framework Takes Shape in Brussels",
+      "link": "https://euractiv.com/example",
+      "summary": "유럽연합과 미국, 중국이 인공지능 규제에 대한 국제 기준 마련에 합의했습니다. 올해 말까지 초안이 완성될 것으로 예상되며, 글로벌 기술 기업들의 규제 준수 비용이 증가할 것으로 보입니다.",
+      "source": "euractiv",
+      "published": "2026-03-08T10:15:00Z",
+      "category": "테크규제",
+      "confidence": 92
+    },
+    {
+      "title": "Middle East Tensions Ease as Regional Powers Meet",
+      "link": "https://aljazeera.com/example",
+      "summary": "중동 지역의 주요 국가들이 이란과의 대화를 재개하기로 합의했습니다. 이는 지난 18개월간의 긴장 관계 완화를 의미하며, 글로벌 에너지 시장에 긍정적 신호로 작용할 전망입니다.",
+      "source": "aljazeera",
+      "published": "2026-03-08T07:45:00Z",
+      "category": "정치변화",
+      "confidence": 88
+    },
+    {
+      "title": "Energy Crisis in Europe Eases as Green Transition Accelerates",
+      "link": "https://ft.com/example",
+      "summary": "유럽의 재생에너지 발전량이 전체 전력의 45%를 초과했습니다. 이는 에너지 가격 인상 압력을 완화하고 인플레이션 지표 개선으로 이어질 것으로 분석됩니다.",
+      "source": "ft",
+      "published": "2026-03-08T09:20:00Z",
+      "category": "거시경제",
+      "confidence": 90
+    },
+    {
+      "title": "Korea's Defense Exports Reach Record High Amid Geopolitical Tensions",
+      "link": "https://koreaherald.com/example",
+      "summary": "한국의 방위산업 수출이 지난해 대비 32% 증가해 역대 최고치를 기록했습니다. 반도체와 함께 한국 수출의 핵심 동력으로 부상했으며, 기술 선진국 이미지 제고에도 기여하고 있습니다.",
+      "source": "koreaherald",
+      "published": "2026-03-08T06:00:00Z",
+      "category": "군사·갈등",
+      "confidence": 94
+    },
+    {
+      "title": "Bitcoin Surges 8% on Global Financial Stability Signals",
+      "link": "https://bloomberg.com/example",
+      "summary": "비트코인이 지정학적 위험 완화 신호에 8% 상승했습니다. 기관투자자들의 포트폴리오 편입이 증가하면서 암호화폐 시장의 성숙도가 높아지고 있습니다.",
+      "source": "bloomberg",
+      "published": "2026-03-08T11:30:00Z",
+      "category": "거시경제",
+      "confidence": 85
+    }
+  ]
+}

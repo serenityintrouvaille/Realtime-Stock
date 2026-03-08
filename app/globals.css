@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&family=Inter:wght@400;500;600;700&display=swap');
 
 * {
   margin: 0;
@@ -7,189 +7,87 @@
 }
 
 body {
-  background: #0d0f14;
-  color: #ffffff;
-  font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Noto Serif KR', serif;
+  background: #f9f9f9;
+  color: #1a1a1a;
+  line-height: 1.8;
 }
 
-/* Quartr Finance Research Style Colors */
-:root {
-  --quartr-bg: #0d0f14;
-  --quartr-card-dark: #1a1d26;
-  --quartr-border: rgba(255, 255, 255, 0.08);
-  --quartr-accent: #3b82f6;
-  --quartr-success: #10b981;
-  --quartr-danger: #ef4444;
-  --quartr-warning: #f59e0b;
+.container {
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; }
+h2 { font-size: 1.75rem; font-weight: 700; margin-top: 2rem; border-bottom: 2px solid #e0e0e0; }
+h3 { font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; }
 
-/* Glass Morphism */
-.glass {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 10px;
-}
-
-.glass-input {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+.card {
+  background: white;
+  padding: 2rem;
+  margin-bottom: 2rem;
   border-radius: 8px;
-  padding: 10px 15px;
-  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
-.glass-btn {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 8px;
-  padding: 10px 20px;
-  color: #ffffff;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.glass-btn:hover {
-  background: rgba(255, 255, 255, 0.15);
-  border-color: rgba(255, 255, 255, 0.3);
-}
-
-.glass-btn-primary {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 8px;
-  padding: 10px 20px;
-  color: #ffffff;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-weight: 600;
-}
-
-.glass-btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
-}
-
-/* Gradient Background */
-.gradient-bg {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
-}
-
-/* Animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-in {
-  animation: fadeIn 0.3s ease-in-out;
-}
-
-/* Quartr Card Styling */
-.quartr-card {
-  background: rgba(26, 29, 38, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-left: 3px solid var(--quartr-accent);
-  border-radius: 8px;
-  transition: all 0.3s ease;
-}
-
-.quartr-card:hover {
-  border-color: rgba(255, 255, 255, 0.15);
-  background: rgba(26, 29, 38, 0.8);
-}
-
-.quartr-card-success {
-  border-left-color: var(--quartr-success);
-}
-
-.quartr-card-danger {
-  border-left-color: var(--quartr-danger);
-}
-
-.quartr-card-warning {
-  border-left-color: var(--quartr-warning);
-}
-
-/* Ticker Badge */
-.ticker-badge {
+.tag {
   display: inline-block;
-  padding: 4px 8px;
-  background: rgba(59, 130, 246, 0.15);
-  border: 1px solid rgba(59, 130, 246, 0.3);
+  padding: 0.4rem 0.8rem;
+  background: #e8f0ff;
+  color: #0066cc;
   border-radius: 4px;
-  font-size: 12px;
+  font-size: 0.85rem;
   font-weight: 600;
-  color: #3b82f6;
+  margin-right: 0.5rem;
+  font-family: 'Inter', sans-serif;
 }
 
-/* Impact Ring */
-.impact-ring {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: conic-gradient(var(--impact-color) 0% var(--impact-percent), rgba(255, 255, 255, 0.1) 0%);
-  color: white;
+.tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.tab-button {
+  padding: 0.5rem 1rem;
+  background: none;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  color: #666;
+}
+
+.tab-button.active {
+  color: #0066cc;
+  border-bottom: 3px solid #0066cc;
+}
+
+.article-card {
+  background: white;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: all 0.3s;
+}
+
+.article-title {
+  font-size: 1.4rem;
   font-weight: 700;
-  font-size: 14px;
+  margin-bottom: 1rem;
 }
 
-/* Sector Tag Colors */
-.sector-badge {
-  display: inline-block;
-  padding: 4px 10px;
-  border-radius: 12px;
-  font-size: 11px;
-  font-weight: 600;
-  text-transform: uppercase;
+.summary-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
 }
 
-.sector-semiconductor {
-  background: rgba(59, 130, 246, 0.2);
-  color: #60a5fa;
-}
-
-.sector-auto {
-  background: rgba(249, 115, 22, 0.2);
-  color: #fb923c;
-}
-
-.sector-finance {
-  background: rgba(16, 185, 129, 0.2);
-  color: #6ee7b7;
-}
-
-.sector-energy {
-  background: rgba(239, 68, 68, 0.2);
-  color: #fca5a5;
-}
-
-.sector-pharma {
-  background: rgba(168, 85, 247, 0.2);
-  color: #d8b4fe;
-}
-
-.sector-defense {
-  background: rgba(244, 114, 182, 0.2);
-  color: #f472b6;
+@media (max-width: 768px) {
+  .container { padding: 0 15px; }
+  h1 { font-size: 1.75rem; }
 }
